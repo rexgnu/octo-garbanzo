@@ -1,0 +1,39 @@
+{
+  "name": "octo-garbanzo",
+  "version": "0.0.1",
+  "description": "billsplitting thingy",
+  "main": "index.js",
+  "scripts": {
+    "start": "watchify --extension=js -o bundle.js index.js & python -m SimpleHTTPServer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackielii/simplest-redux-example.git"
+  },
+  "keywords": [
+    "redux",
+    "react"
+  ],
+  "author": "Gabriel Ledung, Sebastian Schöld",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rexgnu/octo-garbanzo"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "homepage": "https://github.com/rexgnu/octo-garbanzo#readme",
+  "dependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-redux": "^3.1.0",
+    "redux": "^3.0.0"
+  },
+  "devDependencies": {
+    "browserify": "~10.2.4",
+    "babelify": "~6.1.2",
+    "watchify": "^3.3.1"
+  }
+}
